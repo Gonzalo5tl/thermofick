@@ -1,0 +1,95 @@
+
+@media screen and (min-width:48.1rem){
+
+    header .head{width: 95%;}
+    header #open{display: none;}
+   .head{
+       /* background: rgb(202, 215, 255); */
+       grid-template-columns: 10%  50%!important;
+       justify-content: space-between;
+   }
+
+   .head #title{
+    width: 100% !important;   
+    /* background: yellow; */
+    align-content: flex-end !important;
+}
+
+#logo-animado{width: 50%;}
+
+   .head .staticmenu{
+       display: block !important;
+       width: 100%;
+       /* border: 1px solid rgb(75, 158, 54); */
+       align-self: flex-start;
+       font-family: 'Poppins', sans-serif;
+       font-weight: 200;
+   }
+   .staticmenu ul{
+        display: flex;
+        justify-content: space-around;
+}
+   .staticmenu li{list-style: none;
+    font-size: 1.1rem;}
+
+   .staticmenu a{
+    text-decoration: none;
+    padding: .1rem;
+    position: relative;
+   }
+
+   .staticmenu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #509ed3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .staticmenu a:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+  .staticmenu a:hover{
+    color: rgb(231, 244, 255);
+    transition: .7s;
+    cursor: pointer;
+  }
+
+  .overlay{display: block;}
+  .modalidiom{width:10%;
+    left: 79.5%;grid-template-rows: 10% 95%;}
+    
+    .modalidiom a{
+      width: 12%;
+      margin: .3rem auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: .5rem;
+      cursor: pointer;
+    }
+
+    /* .modalidiom a:nth-child(2){
+      margin-bottom: .4rem;
+    } */
+
+    .modalidiom #lbra{background-image: url('../images/brasil.png');}
+    
+    .modalidiom #lmex{background-image: url('../images/mex.png');}
+
+
+    .modalidiom a:hover{width: 14%;}
+
+  .banner .media{width: 45%;}
+  .banner .next{align-self: center;}
+  .flecha-home{width: 4.3rem;}
+}
