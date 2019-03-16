@@ -164,7 +164,7 @@ Vue.component('banner',{
         <video ref="VideoRef" src="" id="video-banner" 
           autoplay 
           playsinline
-          poster="/assets/images/completa.svg">
+          poster="./assets/images/completa.svg">
         </video>
       </div>
       <div class="next">
